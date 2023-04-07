@@ -1,0 +1,25 @@
+body {
+  color: #fff;
+  background: #000036;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+}
+
+.slider-bg {
+  background: url(../images/slider-bg.png);
+}

@@ -1,0 +1,81 @@
+// Header Start
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .menu {
+    ul {
+      display: flex;
+      align-items: center;
+    }
+    li {
+      margin-right: 40px;
+      font-weight: 500;
+
+      img {
+        vertical-align: middle;
+        margin-left: 10px;
+      }
+    }
+    li a {
+      padding: 40px 0;
+    }
+    ul li {
+      text-transform: capitalize;
+      position: relative;
+    }
+    li ul {
+      position: absolute;
+      left: 0;
+      top: 50px;
+      background: var(--primary-color);
+      width: 200px;
+      display: none;
+      z-index: 999;
+    }
+    ul li ul li a {
+      transition: $transition05;
+      font-weight: 400;
+      padding: 10px 20px;
+      color: #000;
+      display: block;
+    }
+    li ul li:hover a {
+      background: var(--secondary-color);
+      color: var(--primary-color);
+    }
+    li ul li:nth-child(n + 1) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    ul li:hover ul {
+      display: block;
+    }
+    li:last-child {
+      margin-right: 0;
+      margin-left: -30px;
+      position: relative;
+
+      .card {
+        background: #000;
+        position: absolute;
+        padding: 0px 6px;
+        top: -20px;
+        border-radius: 10px;
+        right: -10px;
+        font-size: 12px;
+      }
+    }
+    li:nth-child(n + 8) a {
+      background: var(--secondary-color);
+      padding: 8px;
+      border-radius: 10px;
+
+      img {
+        width: 18px;
+        margin-left: 0;
+      }
+    }
+  }
+}
+// Header End
